@@ -551,6 +551,16 @@ progress {
   max-width: 100%;
   height: auto;
 }
+.img-blog-fluid {
+  max-width: 70%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .img-blog-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
