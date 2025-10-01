@@ -1226,13 +1226,38 @@ input:-moz-placeholder {
 .blog-content h4 {
   margin-bottom: 20px;
 }
+.blog-text {
+  margin: 0 157px;
+}
+@media (max-width: 992px) {
+  .blog-text {
+    margin: 0 0;
+  }
+}
 .blog-content h4 a {
   line-height: 1.4;
   margin-bottom: 15px;
   color: #222222;
 }
-.blog-infobar {
+.blog-details-infobar {
   margin-bottom: 10px;
+  margin: 0 157px;
+}
+.blog-details-infobar ul li {
+  display: inline-block;
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+.blog-details-infobar ul li a {
+  color: #222222;
+}
+.blog-details-infobar ul li a i {
+  margin-right: 5px;
+}
+@media (max-width: 992px) {
+  .blog-details-infobar {
+    margin: 0 0;
+  }
 }
 .blog-infobar ul li {
   display: inline-block;
