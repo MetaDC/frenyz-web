@@ -647,6 +647,8 @@ input:-moz-placeholder {
   margin: auto;
   margin-bottom: 18px;
   padding: 1.5rem;
+  overflow: hidden; /* IMPORTANT: keeps image inside circle */
+  padding: 0;
 }
 .feature-img::after {
   content: "";
@@ -703,6 +705,9 @@ input:-moz-placeholder {
 }
 .feature-img img {
   width: 100%;
+  height: 100%; /* Make image fill container */
+  object-fit: cover; /* Crop properly to fit circle */
+  border-radius: 50%;
 }
 
 /*------------------------------------------------ 
@@ -723,8 +728,11 @@ input:-moz-placeholder {
 }
 .about-img {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about-img:before {
+/* .about-img:before {
   content: "";
   position: absolute;
   right: 50px;
@@ -733,7 +741,7 @@ input:-moz-placeholder {
   width: 88%;
   height: 100%;
   border: 2px dashed #dddddd;
-}
+} */
 .myvideo {
   position: absolute;
   right: 80px;
